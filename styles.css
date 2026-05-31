@@ -51,7 +51,7 @@ body {
 }
 
 .logo-img {
-  height: 54px;
+  height: 100px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -120,12 +120,20 @@ body {
   color: var(--light-color);
 }
 
-.hero::before,
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* Main hero overlay (reduced) */
+  background: rgba(0, 0, 0, 0.18);
+}
+
 .suite-detail-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.42);
+  /* Slightly clearer on suite pages */
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .hero-content,
