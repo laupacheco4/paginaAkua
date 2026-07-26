@@ -1,125 +1,415 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akua Suites – Boutique Ocean View Hotel in Tárcoles, Costa Rica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    
-<header class="navbar">
-    <a href="#home" class="brand" aria-label="Akua Suites inicio">
-        <img src="images/logo.avif" alt="Akua Suites" class="logo-img">
-    </a>
-    <nav id="nav" class="nav-links">
-        <a href="#home">Inicio</a>
-        <a href="#suites">Suites</a>
-        <a href="#amenities">Amenidades</a>
-        <a href="#experiences">Experiencias</a>
-        <a href="#location">Ubicación</a>
-        <a href="#contact">Contacto</a>
-        <a href="https://example.com/book" class="btn-book" target="_blank" rel="noopener">Reservar Ahora</a>
-    </nav>
-    <button class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-    </button>
-</header>
+
+    <header class="navbar">
+        <a href="#home" class="brand" aria-label="Akua Suites inicio">
+            <img src="images/logo.avif" alt="Akua Suites" class="logo-img">
+        </a>
+        <nav id="nav" class="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#suites">Suites</a>
+            <!-- <a href="#amenities">Amenidades</a> -->
+            <a href="#reviews">Opiniones</a>
+            <a href="#experiences">Experiencias</a>
+            <a href="#location">Ubicación</a>
+            <a href="#contact">Contacto</a>
+            <a href="https://live.ipms247.com/booking/book-rooms-akuasuites" class="btn-book" target="_blank" rel="noopener">Reservar Ahora</a>
+        </nav>
+        <button class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
 
 
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Bienvenido a Akua Suites</h1>
             <p>Un refugio boutique de privacidad, piscina privada y vista al océano en Tárcoles, Costa Rica</p>
-            <a href="https://example.com/book" class="btn-primary" target="_blank" rel="noopener">Reservar Ahora</a>
+            <a href="https://live.ipms247.com/booking/book-rooms-akuasuites" class="btn-primary" target="_blank" rel="noopener">Reservar Ahora</a>
         </div>
     </section>
 
     <section id="suites" class="section suites">
         <div class="container">
-            <h2 class="section-title">Suites Privadas con Vista al Mar</h2>
-            <p class="section-subtitle">Cuatro estilos de suite, todas con piscina privada, vista al océano y una atmósfera pensada para descansar con total privacidad.</p>
-            <div class="suite-grid">
-
-                <a class="suite-item suite-link reveal" href="suites/terrace-deluxe-suite.html" aria-label="Ver más fotos de Terrace Deluxe Suite">
-                    <div class="suite-image" style="background-image:url('images/terrace-deluxe-suite.avif');"></div>
-                    <div class="suite-card-content">
-                        <p class="suite-label">Piscina privada · Vista al mar</p>
-                        <h3>Terrace Deluxe Suite</h3>
-                        <p>Una de nuestras suites más amplias, ideal para hasta 4 personas. Cuenta con una cama king, una cama queen, piscina privada, vista al mar y una terraza con vista al bosque tropical para vivir Costa Rica desde la intimidad de la naturaleza.</p>
-                        <span class="text-link">Ver suite y galería</span>
+            <div class="suites-carousel-container">
+                <div class="carousel-header">
+                    <div class="carousel-title-block">
+                        <span class="carousel-subtitle-italics">Suites Privadas</span>
+                        <h2 class="section-title">Vista al Océano</h2>
                     </div>
-                </a>
+                    <p class="carousel-description-text">Cuatro estilos de suite diseñados con piscina privada, terrazas
+                        exclusivas y vistas panorámicas pensadas para descansar con total privacidad en Tárcoles, Costa
+                        Rica.</p>
+                </div>
 
-                <a class="suite-item suite-link reveal" href="suites/ocean-view-deluxe-suite.html" aria-label="Ver más fotos de Ocean View Deluxe Suite">
-                    <div class="suite-image" style="background-image:url('images/ocean-view-deluxe-suite.webp');"></div>
-                    <div class="suite-card-content">
-                        <p class="suite-label">Piscina privada · Vista al mar</p>
-                        <h3>Ocean View Deluxe Suite</h3>
-                        <p>Espaciosa, elegante y diseñada para compartir sin perder privacidad. Tiene capacidad para 4 personas, con una cama king, una cama queen, piscina privada y una vista al océano que convierte cada amanecer en parte de la experiencia.</p>
-                        <span class="text-link">Ver suite y galería</span>
-                    </div>
-                </a>
+                <div class="suite-carousel-wrapper">
+                    <div class="suite-carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="suite-slide">
+                            <div class="suite-slide-image-wrapper">
+                                <div class="suite-slide-image"
+                                    style="background-image:url('images/terrace-deluxe-suite.avif');"></div>
+                            </div>
+                            <div class="suite-slide-content">
+                                <span class="suite-slide-category">Piscina privada · Vista al mar</span>
+                                <h3>Terrace Deluxe Suite</h3>
+                                <p>Una de nuestras suites más amplias, ideal para hasta 4 personas. Cuenta con una cama
+                                    king, una cama queen, piscina privada y una terraza con vista al bosque tropical.
+                                </p>
+                                <a href="suites/terrace-deluxe-suite.html" class="suite-slide-link">Explorar Suite</a>
+                            </div>
+                        </div>
 
-                <a class="suite-item suite-link reveal" href="suites/sunset-suite.html" aria-label="Ver más fotos de Sunset Suite">
-                    <div class="suite-image" style="background-image:url('images/sunset-suite.avif');"></div>
-                    <div class="suite-card-content">
-                        <p class="suite-label">Piscina privada · Vista al mar</p>
-                        <h3>Sunset Suite</h3>
-                        <p>Perfecta para familias o grupos pequeños, con una cama king y dos camas individuales. Su piscina privada y vista al mar crean el ambiente ideal para disfrutar los atardeceres de Tárcoles con comodidad y calma.</p>
-                        <span class="text-link">Ver suite y galería</span>
-                    </div>
-                </a>
+                        <!-- Slide 2 -->
+                        <div class="suite-slide">
+                            <div class="suite-slide-image-wrapper">
+                                <div class="suite-slide-image"
+                                    style="background-image:url('images/ocean-view-deluxe-suite.jpg');"></div>
+                            </div>
+                            <div class="suite-slide-content">
+                                <span class="suite-slide-category">Piscina privada · Vista al mar</span>
+                                <h3>Ocean View Deluxe Suite</h3>
+                                <p>Espaciosa, elegante y diseñada para compartir. Tiene capacidad para 4 personas, con
+                                    cama king, cama queen, piscina privada y vista directa al amanecer del océano.</p>
+                                <a href="suites/ocean-view-deluxe-suite.html" class="suite-slide-link">Explorar
+                                    Suite</a>
+                            </div>
+                        </div>
 
-                <a class="suite-item suite-link reveal" href="suites/studio-suite.html" aria-label="Ver más fotos de Horizon Suite">
-                    <div class="suite-image" style="background-image:url('images/studio-suite.avif');"></div>
-                    <div class="suite-card-content">
-                        <p class="suite-label">Piscina privada · Vista al mar</p>
-                        <h3>Horizon Suite</h3>
-                        <p>Nuestra opción más privada, pensada para dos personas. Cuenta con una cama king, piscina privada y vista al mar: un espacio íntimo, silencioso y perfecto para una escapada romántica o de desconexión total.</p>
-                        <span class="text-link">Ver suite y galería</span>
+                        <!-- Slide 3 -->
+                        <div class="suite-slide">
+                            <div class="suite-slide-image-wrapper">
+                                <div class="suite-slide-image"
+                                    style="background-image:url('images/sunset-suite.avif');"></div>
+                            </div>
+                            <div class="suite-slide-content">
+                                <span class="suite-slide-category">Piscina privada · Vista al mar</span>
+                                <h3>Sunset Suite</h3>
+                                <p>Perfecta para familias o grupos pequeños, con cama king y dos individuales. Su
+                                    piscina privada y vistas crean el ambiente ideal para los atardeceres.</p>
+                                <a href="suites/sunset-suite.html" class="suite-slide-link">Explorar Suite</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="suite-slide">
+                            <div class="suite-slide-image-wrapper">
+                                <div class="suite-slide-image"
+                                    style="background-image:url('images/studio-suite.avif');"></div>
+                            </div>
+                            <div class="suite-slide-content">
+                                <span class="suite-slide-category">Piscina privada · Vista al mar</span>
+                                <h3>Horizon Suite</h3>
+                                <p>Nuestra opción más íntima y privada, pensada para parejas. Cuenta con cama king,
+                                    piscina privada y vistas en un rincón silencioso y romántico.</p>
+                                <a href="suites/studio-suite.html" class="suite-slide-link">Explorar Suite</a>
+                            </div>
+                        </div>
                     </div>
-                </a>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="suite-carousel-controls">
+                    <button class="carousel-control-btn btn-prev" aria-label="Anterior">
+                        <span class="arrow-icon">‹</span> Anterior
+                    </button>
+                    <div class="carousel-progress-bar">
+                        <div class="carousel-progress-fill"></div>
+                    </div>
+                    <button class="carousel-control-btn btn-next" aria-label="Siguiente">
+                        Siguiente <span class="arrow-icon">›</span>
+                    </button>
+                </div>
+                <div class="suite-carousel-index">1 / 4</div>
             </div>
-            <p class="suite-note">Todas las suites destacan por su privacidad, piscina privada y vista al mar, creando una experiencia boutique íntima y memorable.</p>
         </div>
     </section>
 
-    <section id="amenities" class="section amenities">
+
+    <section id="booking-channels" class="section ota-booking">
         <div class="container">
-            <h2 class="section-title">Amenidades</h2>
-            <div class="amenities-grid">
-                <div class="amenity-item reveal">
-                    <span class="amenity-icon">🏊‍♂️</span>
-                    <h4>Piscina privada</h4>
-                    <p>Cada suite cuenta con su propia piscina privada para disfrutar el sol, la vista y la tranquilidad sin interrupciones.</p>
+            <h2 class="section-title text-light">Reserva a tu manera</h2>
+            <p class="section-subtitle text-light">Además de reservar directamente con nosotros, puedes gestionar tu
+                estadía a través de tus plataformas favoritas.</p>
+
+            <div class="ota-grid reveal">
+                <!-- Booking.com Card -->
+                <a href="https://www.booking.com/hotel/cr/akua-suites-ocean-view.es.html" target="_blank" rel="noopener"
+                    class="ota-card booking-com">
+                    <div class="ota-logo-container">
+                        <img src="images/bookingLogoWhite.png" alt="Booking.com" class="ota-svg-logo">
+                    </div>
+                    <h3>Reserva en Booking.com</h3>
+                    <p>Gestiona tu reserva, acumula noches Genius y aprovecha los descuentos especiales para miembros de
+                        la comunidad.</p>
+                    <span class="btn-ota">Ver Disponibilidad</span>
+                </a>
+
+                <!-- Airbnb Card -->
+                <a href="https://www.airbnb.co.cr/rooms/50960429?check_in=2026-08-02&check_out=2026-08-07&search_mode=regular_search&adults=1&children=0&infants=0&pets=0&source_impression_id=p3_1785108393_P3h0X-iI4n8cezj-&previous_page_section_name=1000&federated_search_id=92974d9f-1cd9-4be5-b7bc-11701de3005b" target="_blank" rel="noopener"
+                    class="ota-card airbnb">
+                    <div class="ota-logo-container">
+                        <img src="images/airbnbLogo.webp" alt="Airbnb" class="ota-svg-logo">
+                    </div>
+                    <h3>Reserva en Airbnb</h3>
+                    <p>Ideal para estadías con la tranquilidad, cobertura de AirCover y el soporte directo al huésped de
+                        Airbnb.</p>
+                    <span class="btn-ota">Ver Anuncio</span>
+                </a>
+
+                <!-- Expedia Card -->
+                <a href="https://www.expedia.com/es/Tarcoles-Hoteles-Akua-Ocean-View-Suites.h83066159.Informacion-Hotel"
+                    target="_blank" rel="noopener" class="ota-card expedia">
+                    <div class="ota-logo-container">
+                        <img src="images/expediaLogoWhite.png" alt="Expedia" class="ota-svg-logo">
+                    </div>
+                    <h3>Reserva en Expedia</h3>
+                    <p>Suma puntos OneKey, accede a tarifas combinadas de paquete y gestiona tu itinerario completo en
+                        un solo lugar.</p>
+                    <span class="btn-ota">Ver Tarifas</span>
+                </a>
+            </div>
+
+            <!-- Direct Booking Banner -->
+            <div class="direct-booking-banner reveal">
+                <div class="banner-content">
+                    <h3>¿Prefieres reservar directamente?</h3>
+                    <p>Obtén el mejor precio garantizado, check-in flexible y comunicación directa de inmediato.</p>
                 </div>
-                <div class="amenity-item reveal">
-                    <span class="amenity-icon">🌊</span>
-                    <h4>Vista al mar</h4>
-                    <p>Despierta con el océano como escenario y deja que cada momento se sienta conectado con el paisaje costarricense.</p>
+                <a href="https://live.ipms247.com/booking/book-rooms-akuasuites" class="btn-primary" target="_blank" rel="noopener">Reservar
+                    Directo</a>
+            </div>
+        </div>
+    </section>
+
+
+<template id="amenities-section">
+<section id="amenities" class="section amenities">
+    <div class="container">
+        <h2 class="section-title">Amenidades</h2>
+        <p class="section-subtitle">Disfrute de la máxima comodidad y exclusividad durante su estancia en un entorno
+            natural único.</p>
+        <div class="amenities-wrapper reveal">
+            <!-- Tabs Selector -->
+            <div class="amenities-tabs" role="tablist" aria-label="Amenidades del hotel">
+                <button class="amenity-tab active" role="tab" aria-selected="true" aria-controls="panel-pool"
+                    id="tab-pool" data-index="0">
+                    <span class="tab-icon">🏊‍♂️</span>
+                    <span class="tab-label">Piscina privada</span>
+                    <span class="progress-bar"><span class="progress-bar-fill"></span></span>
+                </button>
+                <button class="amenity-tab" role="tab" aria-selected="false" aria-controls="panel-oceanview"
+                    id="tab-oceanview" data-index="1">
+                    <span class="tab-icon">🌊</span>
+                    <span class="tab-label">Vista al mar</span>
+                    <span class="progress-bar"><span class="progress-bar-fill"></span></span>
+                </button>
+                <button class="amenity-tab" role="tab" aria-selected="false" aria-controls="panel-garden"
+                    id="tab-garden" data-index="2">
+                    <span class="tab-icon">🌿</span>
+                    <span class="tab-label">Jardín y terraza</span>
+                    <span class="progress-bar"><span class="progress-bar-fill"></span></span>
+                </button>
+                <button class="amenity-tab" role="tab" aria-selected="false" aria-controls="panel-parking"
+                    id="tab-parking" data-index="3">
+                    <span class="tab-icon">🚗</span>
+                    <span class="tab-label">Estacionamiento</span>
+                    <span class="progress-bar"><span class="progress-bar-fill"></span></span>
+                </button>
+                <button class="amenity-tab" role="tab" aria-selected="false" aria-controls="panel-wifi"
+                    id="tab-wifi" data-index="4">
+                    <span class="tab-icon">📶</span>
+                    <span class="tab-label">Conexión Wi‑Fi</span>
+                    <span class="progress-bar"><span class="progress-bar-fill"></span></span>
+                </button>
+                <button class="amenity-tab" role="tab" aria-selected="false" aria-controls="panel-delivery"
+                    id="tab-delivery" data-index="5">
+                    <span class="tab-icon">🍽️</span>
+                    <span class="tab-label">Delivery al cuarto</span>
+                    <span class="progress-bar"><span class="progress-bar-fill"></span></span>
+                </button>
+            </div>
+
+            <!-- Panels Content -->
+            <div class="amenities-panels">
+                <!-- Panel 1 -->
+                <div class="amenity-panel active" id="panel-pool" role="tabpanel" aria-labelledby="tab-pool">
+                    <div class="panel-image" style="background-image: url('images/amenity-pool.png');"
+                        aria-label="Piscina privada de Akua Suites"></div>
+                    <div class="panel-info">
+                        <span class="panel-badge">Exclusividad</span>
+                        <h3>Piscina privada</h3>
+                        <p>Cada suite cuenta con su propia piscina privada integrada en la terraza para disfrutar el
+                            sol, la vista y la tranquilidad en total intimidad. Diseñadas para fundirse con el
+                            paisaje y ofrecer un espacio refrescante exclusivo para usted.</p>
+                    </div>
                 </div>
-                <div class="amenity-item reveal">
-                    <span class="amenity-icon">🌿</span>
-                    <h4>Jardín y terraza</h4>
-                    <p>Espacios abiertos rodeados de vegetación tropical, pensados para descansar, leer o simplemente contemplar la naturaleza.</p>
+                <!-- Panel 2 -->
+                <div class="amenity-panel" id="panel-oceanview" role="tabpanel" aria-labelledby="tab-oceanview"
+                    hidden>
+                    <div class="panel-image" style="background-image: url('images/amenity-oceanview.png');"
+                        aria-label="Vista al mar desde la suite"></div>
+                    <div class="panel-info">
+                        <span class="panel-badge">Paisaje</span>
+                        <h3>Vista al mar</h3>
+                        <p>Despierta con el océano Pacífico como escenario principal. Nuestras suites están
+                            estratégicamente orientadas para que disfrutes de espectaculares atardeceres y de la
+                            brisa marina directamente desde la comodidad de tu cama o terraza.</p>
+                    </div>
                 </div>
-                <div class="amenity-item reveal">
-                    <span class="amenity-icon">🚗</span>
-                    <h4>Estacionamiento privado</h4>
-                    <p>Comodidad desde tu llegada, con espacio seguro para estacionar dentro de la propiedad.</p>
+                <!-- Panel 3 -->
+                <div class="amenity-panel" id="panel-garden" role="tabpanel" aria-labelledby="tab-garden" hidden>
+                    <div class="panel-image" style="background-image: url('images/amenity-garden.png');"
+                        aria-label="Jardines y terraza de Akua Suites"></div>
+                    <div class="panel-info">
+                        <span class="panel-badge">Naturaleza</span>
+                        <h3>Jardín y terraza</h3>
+                        <p>Rodeado de vegetación tropical autóctona que atrae aves exóticas e iguanas. Un espacio al
+                            aire libre diseñado para relajarse con un buen libro, practicar yoga o simplemente
+                            contemplar la naturaleza costarricense.</p>
+                    </div>
                 </div>
-                <div class="amenity-item reveal">
-                    <span class="amenity-icon">📶</span>
-                    <h4>Wi‑Fi de alta velocidad</h4>
-                    <p>Conexión gratuita para trabajar, planear tus aventuras o compartir tus mejores momentos desde la suite.</p>
+                <!-- Panel 4 -->
+                <div class="amenity-panel" id="panel-parking" role="tabpanel" aria-labelledby="tab-parking" hidden>
+                    <div class="panel-image" style="background-image: url('images/amenity-parking.png');"
+                        aria-label="Estacionamiento privado seguro"></div>
+                    <div class="panel-info">
+                        <span class="panel-badge">Seguridad</span>
+                        <h3>Estacionamiento privado</h3>
+                        <p>Seguridad y conveniencia desde el momento de su llegada. Contamos con espacios de
+                            estacionamiento exclusivos y seguros dentro de la propiedad cerrada, brindándole total
+                            tranquilidad durante su estadía.</p>
+                    </div>
                 </div>
-                <div class="amenity-item reveal">
-                    <span class="amenity-icon">🍽️</span>
-                    <h4>Delivery a la habitación</h4>
-                    <p>Disfruta mayor comodidad y privacidad con servicio delivery de restaurantes de la zona directamente en tu suite.</p>
+                <!-- Panel 5 -->
+                <div class="amenity-panel" id="panel-wifi" role="tabpanel" aria-labelledby="tab-wifi" hidden>
+                    <div class="panel-image" style="background-image: url('images/amenity-wifi.png');"
+                        aria-label="Conexión Wi-Fi"></div>
+                    <div class="panel-info">
+                        <span class="panel-badge">Conectividad</span>
+                        <h3>Conexión Wi‑Fi</h3>
+                        <p>Manténgase conectado con el mundo sin perder la paz del paraíso. Nuestra red Wi-Fi cubre
+                            todas las suites y áreas comunes, ideal para teletrabajo, transmisión de contenido o
+                            compartir su experiencia.</p>
+                    </div>
+                </div>
+                <!-- Panel 6 -->
+                <div class="amenity-panel" id="panel-delivery" role="tabpanel" aria-labelledby="tab-delivery"
+                    hidden>
+                    <div class="panel-image" style="background-image: url('images/amenity-delivery.png');"
+                        aria-label="Servicio de delivery en la suite"></div>
+                    <div class="panel-info">
+                        <span class="panel-badge">Confort</span>
+                        <h3>Delivery a la habitación</h3>
+                        <p>Disfrute de la exquisita gastronomía local sin salir de su suite. Ofrecemos coordinación
+                            y entrega a la habitación de menús selectos de los mejores restaurantes de la zona de
+                            Tárcoles directamente a su mesa privada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</template>
+
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="reviews-wrapper">
+                <!-- Left Side: Ratings Summary -->
+                <div class="reviews-summary reveal">
+                    <span class="reviews-badge">Experiencia de Huéspedes</span>
+                    <h2 class="section-title text-left" style="text-align: left; margin-bottom: 1.5rem;">Opiniones que
+                        nos inspiran</h2>
+                    <div class="rating-huge">
+                        <span class="rating-number">9.8</span>
+                        <div class="rating-meta">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">Basado en más de 250 opiniones</span>
+                        </div>
+                    </div>
+
+                    <p class="reviews-description">Nuestra prioridad es ofrecer un espacio íntimo, cómodo y exclusivo.
+                        Nos enorgullece recibir excelentes calificaciones en las plataformas más importantes del mundo.
+                    </p>
+
+                    <div class="platform-scores">
+                        <div class="score-item">
+                            <span class="platform-name">Booking.com</span>
+                            <span class="score-value">9.8 / 10</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="platform-name">Airbnb</span>
+                            <span class="score-value">4.9 / 5</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="platform-name">Expedia</span>
+                            <span class="score-value">9.6 / 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Testimonial Cards Grid -->
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card reveal">
+                        <div class="review-header">
+                            <div class="stars">★★★★★</div>
+                            <span class="review-platform airbnb-color">Airbnb</span>
+                        </div>
+                        <h4>"Un paraíso privado absoluto"</h4>
+                        <p>"La suite Horizon superó todas nuestras expectativas. La piscina privada con vista al océano
+                            es espectacular y la privacidad es total. Despertar viendo el mar y las aves tropicales fue
+                            increíble. Volveremos sin duda."</p>
+                        <div class="review-author">
+                            <span class="author-name">Sarah M.</span>
+                            <span class="author-country">Estados Unidos</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card reveal">
+                        <div class="review-header">
+                            <div class="stars">★★★★★</div>
+                            <span class="review-platform booking-color">Booking.com</span>
+                        </div>
+                        <h4>"Servicio impecable y vistas inigualables"</h4>
+                        <p>"Excelente ubicación, la suite Terrace es espaciosa y estaba impecablemente limpia. El
+                            personal fue súper atento con todas nuestras solicitudes y el delivery de comida local al
+                            cuarto funcionó genial. ¡El atardecer desde la piscina es mágico!"</p>
+                        <div class="review-author">
+                            <span class="author-name">Alejandro R.</span>
+                            <span class="author-country">Costa Rica</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card reveal">
+                        <div class="review-header">
+                            <div class="stars">★★★★★</div>
+                            <span class="review-platform expedia-color">Expedia</span>
+                        </div>
+                        <h4>"El refugio perfecto para desconectar"</h4>
+                        <p>"Si buscas descansar en privacidad con vistas de ensueño, este es el lugar. Nos encantó la
+                            combinación de naturaleza tropical y confort moderno. La atención al detalle es excelente."
+                        </p>
+                        <div class="review-author">
+                            <span class="author-name">Kathrin S.</span>
+                            <span class="author-country">Alemania</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,22 +420,61 @@
             <h2 class="section-title">Explora y Descubre</h2>
             <p class="section-subtitle">Nuestro hotel está rodeado de maravillas naturales y aventuras inolvidables.</p>
             <div class="experience-grid">
+                <!-- Card 1 -->
                 <div class="experience-item reveal">
-                    <h3>Tours de cocodrilos en el río Tárcoles</h3>
-                    <p>Vive una experiencia única en bote por el río Tárcoles, uno de los lugares más reconocidos de Costa Rica para observar cocodrilos en su hábitat natural. Entre manglares, aves exóticas, iguanas y paisajes tropicales, este tour combina aventura, fotografía y contacto directo con la vida silvestre del Pacífico Central.</p>
-                    <a href="https://wa.me/50688733111" class="text-link" target="_blank" rel="noopener">Reserve su tour aquí</a>
+                    <div class="experience-image-wrapper">
+                        <img src="images/crocodile-man-tour.jpg" alt="Tours de cocodrilos en el río Tárcoles">
+                    </div>
+                    <div class="experience-text-content">
+                        <h3>Tours de cocodrilos en el río Tárcoles</h3>
+                        <p>Vive una aventura inigualable navegando por el río Tárcoles. Observa de cerca cocodrilos
+                            gigantes de hasta 5 metros de largo en su hábitat natural, guiado por expertos locales. Un
+                            recorrido emocionante que combina fauna silvestre y bellos manglares.</p>
+                        <a href="https://wa.me/50688733111?text=Hola%20Akua%20Suites,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20reservar%20el%20Tour%20de%20Cocodrilos%20en%20el%20r%C3%ADo%20T%C3%A1rcoles."
+                            class="btn-primary" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+                    </div>
                 </div>
+                <!-- Card 2 -->
                 <div class="experience-item reveal">
-                    <h3>Parque Nacional Carara</h3>
-                    <p>A pocos kilómetros del hotel, descubre la exuberante flora y fauna de esta reserva, famosa por su biodiversidad y por ser hogar de especies tropicales icónicas como la lapa roja.</p>
+                    <div class="experience-image-wrapper">
+                        <img src="images/carara-natl-park.jpg" alt="Parque Nacional Carara">
+                    </div>
+                    <div class="experience-text-content">
+                        <h3>Parque Nacional Carara</h3>
+                        <p>Un santuario natural único donde convergen los bosques seco y lluvioso. Recorre sus senderos
+                            accesibles para admirar una biodiversidad asombrosa, incluyendo la espectacular lapa roja,
+                            monos cariblancos, tucanes y árboles centenarios gigantes.</p>
+                        <a href="https://wa.me/50688733111?text=Hola%20Akua%20Suites,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20reservar%20el%20Tour%20guiado%20al%20Parque%20Nacional%20Carara."
+                            class="btn-primary" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+                    </div>
                 </div>
+                <!-- Card 3 -->
                 <div class="experience-item reveal">
-                    <h3>Pura Vida Gardens &amp; Waterfalls</h3>
-                    <p>Admira jardines tropicales, senderos escénicos y cascadas rodeadas de naturaleza, perfectos para una mañana de exploración tranquila.</p>
+                    <div class="experience-image-wrapper">
+                        <img src="images/pura-vida-gardens.webp" alt="Pura Vida Gardens & Waterfalls">
+                    </div>
+                    <div class="experience-text-content">
+                        <h3>Pura Vida Gardens &amp; Waterfalls</h3>
+                        <p>Camina entre espectaculares senderos rodeados de millones de flores tropicales, orquídeas y
+                            espectaculares miradores. Disfruta de la vista de la catarata más alta de Costa Rica en un
+                            entorno de paz absoluta diseñado para los amantes de la fotografía y la serenidad.</p>
+                        <a href="https://wa.me/50688733111?text=Hola%20Akua%20Suites,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20reservar%20entradas%20para%20Pura%20Vida%20Gardens%20%26%20Waterfalls."
+                            class="btn-primary" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+                    </div>
                 </div>
+                <!-- Card 4 -->
                 <div class="experience-item reveal">
-                    <h3>Aventuras al aire libre</h3>
-                    <p>Realiza ciclismo, snorkel, paseos a caballo, pesca o golf en los alrededores y descubre el lado más activo de Tárcoles y Jacó.</p>
+                    <div class="experience-image-wrapper">
+                        <img src="images/Riders-Adventures-Tours.webp" alt="Riders Adventures ATV Tours">
+                    </div>
+                    <div class="experience-text-content">
+                        <h3>Riders Adventures</h3>
+                        <p>Siente la adrenalina recorriendo senderos de montaña, ríos y selva a bordo de un potente ATV
+                            (cuadraciclo) o vehículo 4x4. Descubre miradores secretos hacia el océano y experimenta la
+                            naturaleza de Costa Rica de la forma más emocionante y activa.</p>
+                        <a href="https://wa.me/50688733111?text=Hola%20Akua%20Suites,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20reservar%20un%20tour%20en%20ATV%20con%20Riders%20Adventures."
+                            class="btn-primary" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,14 +483,17 @@
     <section id="location" class="section location">
         <div class="container">
             <h2 class="section-title">Ubicación</h2>
-            <p class="section-subtitle">Estamos ubicados en C. Los Espavles, Tárcoles, Garabito Municipality 61102, Costa Rica.</p>
-            <div class="location-content reveal">
-                <p>Nuestro hotel se encuentra en las colinas de Tárcoles, cerca de la playa y rodeado de naturaleza tropical. Desde aquí tendrás acceso rápido a atractivos como el río Tárcoles, el Parque Nacional Carara, Catarata Manantial de Agua Viva, Pura Vida Gardens &amp; Waterfalls y Rainforest Adventures Jacó.</p>
-                <p>Consulta el mapa interactivo para planificar tu llegada.</p>
+            <p>Nuestro hotel se encuentra en las colinas de Tárcoles, cerca de la playa y rodeado de naturaleza
+                tropical. Desde aquí tendrás acceso rápido a atractivos como el río Tárcoles, el Parque Nacional Carara,
+                Catarata Manantial de Agua Viva, Pura Vida Gardens &amp; Waterfalls y Rainforest Adventures Jacó.</p>
+            <p>Consulta el mapa interactivo para planificar tu llegada.</p>
             <div class="map-embed">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31457.351206685635!2d-84.62336!3d9.751756799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1c9156c6d9d81%3A0x520a463e23514352!2sAkua%20Suites!5e0!3m2!1sen!2scr!4v1777778474526!5m2!1sen!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31457.351206685635!2d-84.62336!3d9.751756799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1c9156c6d9d81%3A0x520a463e23514352!2sAkua%20Suites!5e0!3m2!1sen!2scr!4v1777778474526!5m2!1sen!2scr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            </div>
+        </div>
         </div>
     </section>
 
@@ -175,19 +507,23 @@
                     <span class="contact-label">Llamadas y WhatsApp</span>
                     <a href="tel:+50688733111" class="contact-phone">+506 8873 3111</a>
                     <p>Estamos disponibles para ayudarte con consultas, disponibilidad y detalles de tu estadía.</p>
-                    <a href="https://wa.me/50688733111" class="btn-primary" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+                    <a href="https://wa.me/50688733111" class="btn-primary" target="_blank" rel="noopener">Escribir por
+                        WhatsApp</a>
                 </div>
 
                 <div class="social-contact-grid">
-                    <a href="https://www.facebook.com/Akuasuites/" class="social-card" target="_blank" rel="noopener" aria-label="Facebook de Akua Suites">
+                    <a href="https://www.facebook.com/Akuasuites/" class="social-card" target="_blank" rel="noopener"
+                        aria-label="Facebook de Akua Suites">
                         <img src="images/facebook-icon.avif" alt="Facebook">
                         <span>Facebook</span>
                     </a>
-                    <a href="https://www.instagram.com/akuasuites/" class="social-card" target="_blank" rel="noopener" aria-label="Instagram de Akua Suites">
+                    <a href="https://www.instagram.com/akuasuites/" class="social-card" target="_blank" rel="noopener"
+                        aria-label="Instagram de Akua Suites">
                         <img src="images/instagam-icon.png" alt="Instagram">
                         <span>Instagram</span>
                     </a>
-                    <a href="https://wa.me/50688733111" class="social-card" target="_blank" rel="noopener" aria-label="WhatsApp de Akua Suites">
+                    <a href="https://wa.me/50688733111" class="social-card" target="_blank" rel="noopener"
+                        aria-label="WhatsApp de Akua Suites">
                         <img src="images/whatsapp-icon.png" alt="WhatsApp">
                         <span>WhatsApp</span>
                     </a>
@@ -200,11 +536,14 @@
         <div class="container">
             <p>&copy; 2026 Akua Suites. Todos los derechos reservados.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/Akuasuites/" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
-                <a href="https://www.instagram.com/akuasuites/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                <a href="https://www.facebook.com/Akuasuites/" aria-label="Facebook" target="_blank"
+                    rel="noopener">FB</a>
+                <a href="https://www.instagram.com/akuasuites/" aria-label="Instagram" target="_blank"
+                    rel="noopener">IG</a>
                 <a href="https://wa.me/50688733111" aria-label="WhatsApp" target="_blank" rel="noopener">WA</a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
